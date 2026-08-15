@@ -1,0 +1,199 @@
+:root {
+  --brand-primary: #2e7d32;
+  --brand-primary-dark: #1b5e20;
+  --brand-accent: #f4a230;
+  --brand-bg: #fbf9f4;
+  --brand-text: #2b2b2b;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', system-ui, sans-serif;
+  background: var(--brand-bg);
+  color: var(--brand-text);
+}
+
+.app-main {
+  min-height: 70vh;
+}
+
+/* Navbar */
+.app-navbar {
+  background: var(--brand-primary);
+  padding: 0.75rem 0;
+}
+.app-brand {
+  color: #fff !important;
+  font-weight: 700;
+}
+.app-navbar .nav-link {
+  color: #eaf6ea;
+}
+
+/* Footer */
+.app-footer {
+  background: var(--brand-primary-dark);
+  color: #eaf6ea;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+/* Buttons */
+.btn-brand-primary {
+  background: var(--brand-accent);
+  border-color: var(--brand-accent);
+  color: #2b2b2b;
+  font-weight: 600;
+  border-radius: 999px;
+}
+.btn-brand-primary:hover {
+  background: #e0921f;
+  border-color: #e0921f;
+  color: #2b2b2b;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-primary-dark));
+  color: #fff;
+  padding: 4rem 0;
+}
+.hero-tagline {
+  font-size: 1.25rem;
+  color: #fdf3df;
+}
+
+/* Value props */
+.value-props {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2.5rem 1rem;
+  flex-wrap: wrap;
+}
+.value-card {
+  flex: 1;
+  min-width: 220px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+.value-icon {
+  font-size: 2rem;
+}
+
+/* Chef grid/cards */
+.chef-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+.chef-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+.chef-card-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--brand-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+  font-size: 1.5rem;
+}
+
+.chef-hero {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.chef-hero-avatar {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+}
+
+.rating-stars {
+  color: var(--brand-accent);
+}
+.rating-count {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* Dish cards */
+.dish-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+.dish-card-disabled {
+  opacity: 0.5;
+}
+.qty-stepper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.qty-stepper button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--brand-primary);
+  background: #fff;
+  color: var(--brand-primary);
+}
+
+/* Slot picker */
+.slot-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.slot-chip {
+  border: 1px solid var(--brand-primary);
+  background: #fff;
+  color: var(--brand-primary);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+}
+.slot-chip-selected {
+  background: var(--brand-primary);
+  color: #fff;
+}
+
+.booking-summary-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 1rem;
+}
+
+/* Status badges */
+.status-badge {
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+.badge-pending { background: #f4a230; }
+.badge-confirmed { background: #2f80ed; }
+.badge-progress { background: #9b59b6; }
+.badge-completed { background: #2e7d32; }
+.badge-cancelled { background: #c0392b; }
+
